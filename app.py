@@ -11,7 +11,11 @@ vectorization = TfidfVectorizer()
 vector_form = pickle.load(open('vector.pkl', 'rb'))
 load_model = pickle.load(open('model2.pkl', 'rb'))
 
-
+st.set_page_config(
+    page_title="Fake News Prediction",
+    page_icon=":brain:",  # Favicon emoji
+    layout="centered",  # Page layout option
+)
 
 
 def stemming(content):
